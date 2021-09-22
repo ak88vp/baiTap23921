@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    function number() {
-        let a = +prompt('nhập tham số thứ 1')
-        let b = +prompt('nhập tham số thứ 2')
-        if (a>b){
-            alert('hiển thị hộp thoại thông báo cho người dùng')
-        }else return a+b
+    function number(a, b) {
 
-            } document.write(number())
+        if (a > b) {
+            alert('a>b')
+        } else return a + b
+
+    }
+
+    alert(number(+prompt(), +prompt()))
 </script>
 </body>
 </html>

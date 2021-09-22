@@ -6,9 +6,25 @@
 </head>
 <body>
 <script>
-  let star=[ 'Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','  Regulus']
-  let star2=[ 'Ursa Minor', ' Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo']
+    let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', '  Regulus']
+    let star2 = ['Ursa Minor', ' Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
 
+    function checkStar(st) {
+        for (let i = 0; i < star.length; i++) {
+            if (st === star[i]) {
+                alert('tròm sao này ở hàm star , vị trí của nó là ' + star.indexOf(st))
+                break
+            }
+            if (st === star2[i]) {
+                alert('tròm sao này ở hàm star2 , vị trí của nó là ' + star2.indexOf(st))
+                break
+
+            }if(st!==star && st!==star2) alert('ko tìm thấy')
+            break
+        }
+    }
+
+    checkStar(prompt('nhập tròm sao bạn muốn tìm'))
 
 </script>
 </body>

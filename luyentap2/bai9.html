@@ -7,21 +7,23 @@
 <body>
 <script>
     let strings = ['Someone you loved']
-    let arr=strings.split()
-    let check = [prompt('enter the character')]
-    characters(arr, check)
-
+    let arr=strings.split('')
+    let check0 = prompt('enter the character')
+    let check=check0.split('')
+    let count=0
+    let test=true
+   characters(arr, check)
     function characters(arr, check) {
-        let test = true
         for (let i = 0; i < arr.length; i++) {
             if (check === arr[i]) {
-                test = true
-                return alert(test)
-            } else {
                 test = false
-                return alert(test)
+                count++
+            return
             }
-        }
+        }if (test) {
+            alert(count)
+        } else {
+            alert('-1')}
 
     }
 </script>

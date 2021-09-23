@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let strings = ['Someone you loved']
+    let arr=strings.split()
+    let check = [prompt('enter the character')]
+    characters(arr, check)
+
+    function characters(arr, check) {
+        let test = true
+        for (let i = 0; i < arr.length; i++) {
+            if (check === arr[i]) {
+                test = true
+                return alert(test)
+            } else {
+                test = false
+                return alert(test)
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function num(x, y, z) {
+        if (x < y && y < z) {
+            min = x
+            return min
+        }
+        if (y < x && y < z) {
+            min = y
+            return min
+        }
+        if (z < x && z < y) {
+            min = z
+            return min
+
+        }
+    }
+
+    alert(num(+prompt(), +prompt(), +prompt()))
+</script>
+</body>
+</html>

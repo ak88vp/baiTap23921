@@ -12,19 +12,18 @@
     function checkStar(st) {
         for (let i = 0; i < star.length; i++) {
             if (st === star[i]) {
-                alert('tròm sao này ở hàm star , vị trí của nó là ' + star.indexOf(st))
-                break
-            }
-            if (st === star2[i]) {
-                alert('tròm sao này ở hàm star2 , vị trí của nó là ' + star2.indexOf(st))
-                break
+                document.write('thuộc star vị trí thứ' + star.indexOf(st))
+                return;
+            } else if (st === star2[i]) {
+                document.write('thuộc star2 vị trí thứ' + star2.indexOf(st))
+                return
 
-            }if(st!==star && st!==star2) alert('ko tìm thấy')
-            break
-        }
+            }
+        } document.write('ko có')
     }
 
     checkStar(prompt('nhập tròm sao bạn muốn tìm'))
+
 
 </script>
 </body>
